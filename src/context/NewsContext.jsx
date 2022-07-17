@@ -63,3 +63,5 @@ export const NewsProvider = ({ children }) => {
     </NewsContext.Provider>
   );
 };
+
+
