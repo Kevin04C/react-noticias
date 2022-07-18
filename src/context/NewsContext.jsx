@@ -10,7 +10,6 @@ export const NewsProvider = ({ children }) => {
   const [totalNews, setTotalNews] = useState(null);
 
   const getNews = async () => {
-    console.log(import.meta.env.VITE_API_KEY)
     const url = `https://newsapi.org/v2/top-headlines?country=mx&category=${categories}&apiKey=${
       import.meta.env.VITE_API_KEY
     }`;
