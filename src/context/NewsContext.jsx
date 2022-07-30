@@ -10,9 +10,7 @@ export const NewsProvider = ({ children }) => {
   const [totalNews, setTotalNews] = useState(null);
 
   const getNews = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=mx&category=${categories}&apiKey=${
-      import.meta.env.VITE_API_KEY
-    }`;
+    const url = `https://newsapi.org/v2/top-headlines?country=mx&category=${categories}&apiKey=1e5c2dc641f242b1998fd652c52a272e`;
 
     const { data } = await axios(url);
     setNews(data.articles);
@@ -20,9 +18,7 @@ export const NewsProvider = ({ children }) => {
   };
 
   const getNewsWithPagination = async () => {
-    const url = `https://newsapi.org/v2/top-headlines?country=mx&category=${categories}&page=${page}&apiKey=${
-      import.meta.env.VITE_API_KEY
-    }`;
+    const url = `https://newsapi.org/v2/top-headlines?country=mx&category=${categories}&page=${page}&apiKey=1e5c2dc641f242b1998fd652c52a272e`;
 
     const { data } = await axios(url);
     setNews(data.articles);
